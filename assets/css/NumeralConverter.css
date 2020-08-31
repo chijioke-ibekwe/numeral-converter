@@ -1,0 +1,230 @@
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../images/background\ image\ for\ nconverter.jpg);
+    color: white;
+}
+
+.navbar {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: rgba(13, 13, 13, 0.8);
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 3.5em;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 3px #9ba8a1;
+    margin-top: 20px;
+    display: none;
+}
+
+
+.jumbotron {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    background: #51755a;
+    padding: 50px 25px 25px 25px;
+    border-radius: 75px;
+    box-shadow: 2px 2px 2px 1px #403f3d;
+    height: auto;
+    display: none;
+}
+
+.input {
+    padding-right: 20px;
+}
+
+#numberInput::placeholder {
+    color: #bdbfbd;
+}
+
+#numberInput, #from, #to {
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    letter-spacing: 0.4px;
+    color: #6f706e;
+}
+
+#button {
+    width: auto;
+    height: 50px;
+    margin-top: 20px;
+    padding: 0 15px 3px 15px;
+    font-weight: 700;
+    font-size: 30px;
+    background: white;
+    color: #51755a;
+}
+
+.fa-arrow-right {
+    padding: 55px 10px 0 10px;
+    margin-bottom: 40px;
+}
+
+.answer {
+    padding: 40px 0 10px 0;
+    font-size: 35px;
+    width: auto;
+    display: none;
+}
+
+#button:hover {
+    background: #51755a;
+    color: white;
+}
+
+#reset {
+    width: auto;
+    background: #bf261b;
+    color: white;
+    margin-top: 20px;
+    padding: 0 10px;
+    height: 30px;
+}
+
+#input, #answer {
+    margin: 0 20px
+}
+
+#reset:hover {
+    background: #f5756c;
+    color: white;
+}
+
+input:focus, select:focus {
+    background-color: white;
+    border: 2px solid #2980b9;
+    outline: none;
+}
+
+.chevron {
+    height: 30px;
+    width: auto;
+}
+
+.fixed-bottom {
+    width: 100%;
+    height: 30px;
+    background: black;
+}
+
+@-webkit-keyframes bounceChevron {
+    from {
+      -webkit-padding-bottom: 0px;
+      -webkit-padding-top: 13px;
+    }
+  
+    to {
+      -webkit-padding-bottom: 3px;
+      -webkit-padding-top: 10px;
+    }
+}
+
+@-moz-keyframes bounceChevron {
+    from {
+      -moz-padding-bottom: 0px;
+      -moz-padding-top: 13px;
+    }
+
+    to {
+      -moz-padding-bottom: 3px;
+      -moz-padding-top: 10px;
+    }
+}
+
+@-o-keyframes bounceChevron {
+    from {
+      -o-padding-bottom: 0px;
+      -o-padding-top: 13px;
+    }
+  
+    to {
+      -o-padding-bottom: 3px;
+      -o-padding-top: 10px;
+    }
+}
+
+@keyframes bounceChevron {
+    from {
+      padding-bottom: 0px;
+      padding-top: 13px;
+    }
+  
+    to {
+        padding-bottom: 3px;
+        padding-top: 10px;
+    }
+}
+  
+.fa-chevron-down {
+    padding-top: 15px;
+    -webkit-animation: bounceChevron 0.7s infinite alternate;
+    -moz-animation: bounceChevron 0.7s infinite alternate;
+    -o-animation: bounceChevron 0.7s infinite alternate;
+    animation: bounceChevron 0.7s infinite alternate;
+}
+
+@media only screen and (max-width: 1200px) {
+    #numberInput::placeholder {
+        font-size: 14px;
+    }
+
+    #numberInput, #from, #to {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #numberInput::placeholder {
+        font-size: 9px;
+    }
+
+    #numberInput, #from, #to {
+        font-size: 9.5px;
+        height: 45px;
+    }
+
+    #button {
+        font-size: 23px;
+    }
+
+    .answer {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 3.2em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #numberInput::placeholder {
+    font-size: 14px;
+    }
+
+    #numberInput, #from, #to {
+        font-size: 13.5px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #numberInput::placeholder {
+        font-size: 18px;
+        }
+
+    #numberInput, #from, #to {
+        font-size: 18px;
+    }
+
+    .answer {
+        font-size: 22px;
+    }
+}
+
